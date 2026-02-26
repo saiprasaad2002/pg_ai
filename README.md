@@ -46,13 +46,17 @@ The SKILL Graph is realized through interconnected skills: Each SKILL.md can ref
    git clone https://github.com/saiprasaad2002/pg_ai.git
    cd pg_ai
    ```
-
-2. Install dependencies:
+2. Create virtual environment (preferably python 3.12):
+   ```
+   uv venv --python 3.12
+   ```
+   
+3. Install dependencies:
    ```
    uv sync
    ```
 
-3. Copy and configure the environment file:
+4. Copy and configure the environment file:
    ```
    cp .env.example .env
    ```
@@ -60,7 +64,7 @@ The SKILL Graph is realized through interconnected skills: Each SKILL.md can ref
    - `DB_USER`, `DB_PASS`, `DB_HOST`, `DB_PORT`, `DB_NAME`: Postgres connection details.
    - `MCP_SERVER_HOST`, `MCP_SERVER_PORT`, `MCP_SERVER_TRANSPORT`: Server config (e.g., `STREAMABLE-HTTP` for production).
 
-4. Run the server:
+5. Run the server:
    ```
    uv run app.py
    ```
@@ -125,3 +129,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [SKILL Graph Discussion](https://x.com/arscontexta/status/2023957499183829467?s=20)
 
 For questions, open an issue or contact the maintainer.
+
