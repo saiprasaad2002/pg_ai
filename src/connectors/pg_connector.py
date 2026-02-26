@@ -11,6 +11,12 @@ class PGConnector:
         self.DB_URL = f"postgresql+asyncpg://{self.db_user}:{self.db_pass}@{self.db_host}:{self.db_port}/{self.db_name}"
     
     async def connect(self):
-        self.database = Database(self.DB_URL)
-        await self.database.connect()
-        return self.database
+        try:
+            self.database = Database(self.DB_URL)
+            await self.database.connect()
+            return self.database
+        except Exception:
+            raise
+    
+    async def disconnect(self):
+        await self.database.disconnect()

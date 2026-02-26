@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import List, Callable, Any
 
-class SkillContent(BaseModel):
+class Content(BaseModel):
     content: str = Field(description="The returned skill file content")
 
 class MCPTools(BaseModel):
