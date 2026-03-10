@@ -31,6 +31,11 @@ or
 pip install postgres_ai
 ```
 
+**Build the Skill Files**
+- In the CWD, create the skill directory and grow your skill directory according to your business needs and objectives
+- Note: Always should have a business_logic sub-directory inside your skill dir.
+- For reference checkout out this repository's `pg_skills` directory.
+
 **Prerequisites**
 - Python ≥ 3.12
 - PostgreSQL server (local or remote)
@@ -139,5 +144,6 @@ MIT License — see [LICENSE](LICENSE)
 - 📦 [PyPI: postgres_ai](https://pypi.org/project/postgres_ai/)
 - 🌐 [GitHub Repository](https://github.com/saiprasaad2002/pg_ai)
 - 📧 Issues / questions → open an issue!
+
 
 Built with ❤️ in Chennai.
